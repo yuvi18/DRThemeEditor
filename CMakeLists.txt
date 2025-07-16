@@ -15,10 +15,15 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         src/main.cpp
         src/DRThemeEditor.cpp
-        src/DRThemeEditor.h
+        src/Visualization/LobbyVisualizationPane.cpp
+        src/Visualization/IVisualizationPane.cpp
+        src/Configuration/ThemeConfigurationPane.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
+    find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
     qt_add_executable(DRThemeEditor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
@@ -42,6 +47,8 @@ else()
 endif()
 
 target_link_libraries(DRThemeEditor PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
+target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
