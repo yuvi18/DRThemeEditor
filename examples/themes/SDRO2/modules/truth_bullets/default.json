@@ -1,0 +1,18 @@
+{
+	"courtroom":
+	{ 
+		"bullet": { "position": {"x": 10030, "y": 590, "width": 0, "height": 0 } }, 
+		"shout_up": { "position": {"x": 10040, "y": 553, "width": 22, "height": 20 } }, 
+		"shout_down": { "position": {"x": 10040, "y": 669, "width": 22, "height": 20 } },
+		"objection": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"holdit": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"gotit": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"takethat": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"custom": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"crossswords": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"counteralt": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"perjury": { "position": {"x": 67, "y": 575, "width": 144, "height": 55 } }, 
+		"free_block_barrel": { "position": {"x": -65, "y": 550, "width": 130, "height": 130 } }, 
+		"free_block_barrellines": { "position": {"x": -65, "y": 550, "width": 130, "height": 130 } }  
+	}
+}

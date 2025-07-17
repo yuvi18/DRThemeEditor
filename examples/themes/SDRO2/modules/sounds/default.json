@@ -1,0 +1,25 @@
+{
+  "config":
+  {
+    "sounds": [
+      { "sound": "realization", "file": "DRDing.wav" },
+      { "sound": "witnesstestimony", "file": "DR2ClassTrialSTART.wav" },
+      { "sound": "crossexamination", "file": "DR2ClassTrialEND.wav" },
+      { "sound": "evidence_present", "file": "DR2Present.wav" },
+	  { "sound": "word_call", "file": "Deep Ding.wav"},
+	  { "sound": "mod_call", "file": "Deep Ding.wav"},
+	  { "sound": "effect_flash", "file": "DRding.wav"},
+	  { "sound": "effect_gloom", "file": "DRgloom.wav"},
+	  { "sound": "effect_pow", "file": "DRshout.wav"},
+	  { "sound": "effect_stress", "file": "DRV3gloom.wav"},
+	  { "sound": "effect_knock", "file": "knock.wav"},
+	  { "sound": "investigation", "file": "investigation.wav"},
+	  { "sound": "nonstop", "file": "nonstop.wav"},
+	  { "sound": "mass panic debate", "file": "mass panic debate.wav"},
+	  { "sound": "rebuttal showdown", "file": "rebuttal showdown.wav"},
+	  { "sound": "cycle", "file": "cycle.wav"},
+	  { "sound": "dice", "file": "dice.wav"},
+	  { "sound": "coinflip", "file": "coinflip.wav"}
+    ]
+  }
+}

@@ -1,0 +1,14 @@
+{
+	"courtroom":
+	{ 
+		"wtce": { "position": {"x": 64, "y": 405, "width": 110, "height": 25 } }, 
+		"wtce_up": { "position": {"x": 172, "y": 400, "width": 20, "height": 25 } }, 
+		"wtce_down": { "position": {"x": 50, "y": 400, "width": 20, "height": 25 } }, 
+		"witnesstestimony": { "position": {"x": 195, "y": 657, "width": 110, "height": 25 } }, 
+		"crossexamination": { "position": {"x": 250, "y": 657, "width": 110, "height": 25 } }, 
+		"investigation": { "position": {"x": 160, "y": 688, "width": 110, "height": 25 } }, 
+		"nonstop": { "position": {"x": 260, "y": 686, "width": 110, "height": 25 } }, 
+		"mass panic debate": { "position": {"x": 195, "y": 657, "width": 110, "height": 25 } }, 
+		"rebuttal showdown": { "position": {"x": 195, "y": 657, "width": 110, "height": 25 } }
+	}
+}

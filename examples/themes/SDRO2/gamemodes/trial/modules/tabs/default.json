@@ -1,0 +1,724 @@
+{
+    "tabs": [
+        {
+            "tab_name": "Players",
+            "group": "left",
+            "widgets": [
+                "player_list",
+                "change_character",
+                "iniswap_dropdown",
+                "ic_chat_name",
+                "player_list_left",
+                "player_list_right",
+                "area_look",
+                "area_desc"
+            ]
+        },
+        {
+            "tab_name": "Emote",
+            "group": "main",
+            "widgets": [
+                "emotes",
+                "emote_dropdown",
+                "outfit_selector",
+                "emote_left",
+                "emote_right",
+                "effect",
+                "effect_up",
+                "effect_down",
+                "effect_flash",
+                "effect_gloom",
+                "effect_question",
+                "effect_pow",
+                "effect_heart",
+                "effect_knock",
+                "effect_stress",
+                "effect_shake"
+            ]
+        },
+        {
+            "tab_name": "Extras",
+            "group": "main",
+            "widgets": [
+                "pair_offset",
+                "vertical_offset",
+                "scale_offset"
+            ]
+        },
+        {
+            "tab_name": "sfx",
+            "group": "lists",
+            "widgets": [
+                "sfx_list",
+                "sfx_search"
+            ]
+        },
+        {
+            "tab_name": "areas",
+            "group": "lists",
+            "widgets": [
+                "area_search",
+                "area_list", 
+				"pos_dropdown"
+            ]
+        },
+        {
+            "tab_name": "musics",
+            "group": "lists",
+            "widgets": [
+                "music_list",
+                "music_search",
+				"category_dropdown"
+            ]
+        },
+        {
+            "tab_name": "Message",
+            "group": "additional",
+            "widgets": [
+                "text_color",
+                "chat_type",
+                "pre",
+                "flip",
+                "hidden",
+                "pre_image",
+                "flip_image",
+                "hidden_image"
+            ]
+        },
+        {
+            "tab_name": "animation",
+            "group": "additional",
+            "widgets": [
+                "chara_animations"
+            ]
+        },
+        {
+            "tab_name": "Chat",
+            "group": "default",
+            "widgets": [
+                "ic_chatlog"
+            ]
+        },
+        {
+            "tab_name": "GM",
+            "group": "left",
+            "widgets": [
+                "defense_bar",
+                "defense_plus",
+                "defense_minus",
+                "prosecution_bar",
+                "prosecution_plus",
+                "prosecution_minus",
+                "wtce",
+                "wtce_up",
+                "wtce_down",
+                "call_mod",
+                "witnesstestimony",
+                "crossexamination",
+                "investigation",
+                "nonstop",
+                "mass panic debate",
+                "rebuttal showdown"
+            ]
+        }
+    ],
+    "courtroom": {
+        "text_color": {
+            "position": {
+                "x": 14,
+                "y": 17,
+                "width": 133,
+                "height": 26
+            }
+        },
+        "chat_type": {
+            "position": {
+                "x": 14,
+                "y": 46,
+                "width": 133,
+                "height": 26
+            }
+        },
+        "pre": {
+            "position": {
+                "x": 19,
+                "y": 78,
+                "width": 51,
+                "height": 21
+            }
+        },
+        "flip": {
+            "position": {
+                "x": 64,
+                "y": 78,
+                "width": 50,
+                "height": 21
+            }
+        },
+        "hidden": {
+            "position": {
+                "x": 111,
+                "y": 78,
+                "width": 50,
+                "height": 21
+            }
+        },
+        "pre_image": {
+            "position": {
+                "x": 34,
+                "y": 81,
+                "width": 20,
+                "height": 13
+            }
+        },
+        "flip_image": {
+            "position": {
+                "x": 80,
+                "y": 80,
+                "width": 24,
+                "height": 17
+            }
+        },
+        "hidden_image": {
+            "position": {
+                "x": 126,
+                "y": 80,
+                "width": 17,
+                "height": 17
+            }
+        },
+        "emotes": {
+            "position": {
+                "x": 35,
+                "y": 12,
+                "width": 418,
+                "height": 82
+            },
+            "settings": {
+                "spacing": {
+                    "x": 2,
+                    "y": 2
+                }
+            }
+        },
+        "emote_left": {
+            "position": {
+                "x": 461,
+                "y": 10,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "emote_right": {
+            "position": {
+                "x": 461,
+                "y": 76,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "emote_dropdown": {
+            "position": {
+                "x": 7,
+                "y": 100,
+                "width": 163,
+                "height": 26
+            }
+        },
+        "outfit_selector": {
+            "position": {
+                "x": 318,
+                "y": 100,
+                "width": 163,
+                "height": 26
+            }
+        },
+        "evidence_list": {
+            "position": {
+                "x": 6,
+                "y": 176,
+                "width": 232,
+                "height": 340
+            },
+            "font": {
+                "name": "Source Sans Pro Semibold",
+                "size": 11,
+                "color": "#F0F0F0"
+            }
+        },
+        "evidence_image": {
+            "position": {
+                "x": 8,
+                "y": 8,
+                "width": 222,
+                "height": 124
+            }
+        },
+        "free_block_evidence_overlay": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 140
+            }
+        },
+        "evidence_description": {
+            "position": {
+                "x": 19,
+                "y": 8,
+                "width": 211,
+                "height": 124
+            },
+            "font": {
+                "name": "Source Sans Pro Semibold",
+                "size": 11,
+                "color": "#F0F0F0"
+            }
+        },
+        "evidence_left": {
+            "position": {
+                "x": 8,
+                "y": 147,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "evidence_right": {
+            "position": {
+                "x": 210,
+                "y": 147,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "evidence_present": {
+            "position": {
+                "x": 38,
+                "y": 144,
+                "width": 162,
+                "height": 26
+            }
+        },
+        "change_character": {
+            "position": {
+                "x": 13,
+                "y": 46,
+                "width": 40,
+                "height": 40
+            }
+        },
+        "ic_chat_name": {
+            "position": {
+                "x": 58,
+                "y": 49,
+                "width": 167,
+                "height": 16
+            }
+        },
+        "iniswap_dropdown": {
+            "position": {
+                "x": 58,
+                "y": 68,
+                "width": 167,
+                "height": 16
+            }
+        },
+        "player_list": {
+            "position": {
+                "x": 7,
+                "y": 93,
+                "width": 217,
+                "height": 450
+            },
+            "settings": {
+                "spacing": {
+                    "x": 0,
+                    "y": 6
+                }
+            }
+        },
+        "player_list_left": {
+            "position": {
+                "x": 16,
+                "y": 544,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "player_list_right": {
+            "position": {
+                "x": 200,
+                "y": 544,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "area_look": {
+            "position": {
+                "x": 75,
+                "y": 541,
+                "width": 97,
+                "height": 26
+            }
+        },
+        "pos_dropdown": {
+            "position": {
+                "x": 119,
+                "y": 125,
+                "width": 119,
+                "height": 20
+            }
+        },
+        "category_dropdown": {
+            "position": {
+                "x": 119,
+                "y": 125,
+                "width": 119,
+                "height": 20
+            }
+        },
+        "area_desc": {
+            "position": {
+                "x": 2,
+                "y": 571,
+                "width": 235,
+                "height": 109
+            },
+            "font": {
+                "name": "Source Sans Pro Semibold",
+                "size": 11,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "hide_frame": true
+            }
+        },
+        "chara_animations": {
+            "position": {
+                "x": 9,
+                "y": 12,
+                "width": 145,
+                "height": 93
+            },
+            "font": {
+                "name": "Fairfax OTF",
+                "size": 9,
+                "bold": true,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "found_sfx_color": "#0F0F0F",
+                "missing_sfx_color": "#000000"
+            }
+        },
+        "defense_bar": {
+            "position": {
+                "x": 43,
+                "y": 85,
+                "width": 150,
+                "height": 15
+            }
+        },
+        "defense_plus": {
+            "position": {
+                "x": 23,
+                "y": 85,
+                "width": 15,
+                "height": 15
+            }
+        },
+        "defense_minus": {
+            "position": {
+                "x": 198,
+                "y": 85,
+                "width": 15,
+                "height": 15
+            }
+        },
+        "prosecution_bar": {
+            "position": {
+                "x": 43,
+                "y": 65,
+                "width": 150,
+                "height": 15
+            }
+        },
+        "prosecution_plus": {
+            "position": {
+                "x": 23,
+                "y": 65,
+                "width": 15,
+                "height": 15
+            }
+        },
+        "prosecution_minus": {
+            "position": {
+                "x": 198,
+                "y": 65,
+                "width": 15,
+                "height": 15
+            }
+        },
+        "call_mod": {
+            "position": {
+                "x": 64,
+                "y": 7,
+                "width": 120,
+                "height": 25
+            }
+        },
+        "emote_panel": {
+            "position": {
+                "x": 476,
+                "y": 571,
+                "width": 488,
+                "height": 132
+            }
+        },
+        "message_panel": {
+            "position": {
+                "x": 280,
+                "y": 580,
+                "width": 164,
+                "height": 112
+            }
+        },
+        "animation_panel": {
+            "position": {
+                "x": 280,
+                "y": 580,
+                "width": 164,
+                "height": 112
+            }
+        },
+        "players_panel": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 684
+            }
+        },
+        "chat_panel": {
+            "position": {
+                "x": 1200,
+                "y": 0,
+                "width": 240,
+                "height": 398
+            }
+        },
+        "area_panel": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 516
+            }
+        },
+        "gm_panel": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 516
+            }
+        },
+        "evidence_panel": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 516
+            }
+        },
+        "chat_toggle": {
+            "position": {
+                "x": 1,
+                "y": 1,
+                "width": 0,
+                "height": 0
+            }
+        },
+        "players_toggle": {
+            "position": {
+                "x": 2,
+                "y": 682,
+                "width": 149,
+                "height": 26
+            }
+        },
+        "area_toggle": {
+            "position": {
+                "x": 76,
+                "y": 682,
+                "width": 75,
+                "height": 26
+            }
+        },
+        "evidence_toggle": {
+            "position": {
+                "x": 211,
+                "y": 682,
+                "width": 26,
+                "height": 26
+            }
+        },
+        "gm_toggle": {
+            "position": {
+                "x": 153,
+                "y": 682,
+                "width": 84,
+                "height": 26
+            }
+        },
+        "message_toggle": {
+            "position": {
+                "x": 446,
+                "y": 586,
+                "width": 19,
+                "height": 14
+            }
+        },
+        "areas_toggle": {
+            "position": {
+                "x": 1175,
+                "y": 575,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "areas_panel": {
+            "position": {
+                "x": 1202,
+                "y": 565,
+                "width": 238,
+                "height": 144
+            }
+        },
+        "area_list": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 125
+            },
+            "font": {
+                "name": "Fairfax OTF",
+                "size": 9,
+                "bold": true,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "area_free_color": "#0F0F0F"
+            }
+        },
+        "area_search": {
+            "position": {
+                "x": 0,
+                "y": 125,
+                "width": 119,
+                "height": 20
+            }
+        },
+        "musics_toggle": {
+            "position": {
+                "x": 1175,
+                "y": 600,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "musics_panel": {
+            "position": {
+                "x": 1202,
+                "y": 565,
+                "width": 238,
+                "height": 144
+            }
+        },
+        "music_list": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 125
+            },
+            "font": {
+                "name": "Fairfax OTF",
+                "size": 9,
+                "bold": true,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "found_song_color": "#0F0F0F",
+                "missing_song_color": "#000000"
+            }
+        },
+        "music_search": {
+            "position": {
+                "x": 0,
+                "y": 125,
+                "width": 119,
+                "height": 20
+            }
+        },
+        "sfx_toggle": {
+            "position": {
+                "x": 1175,
+                "y": 625,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "screenshot": {
+            "position": {
+                "x": 1175,
+                "y": 650,
+                "width": 20,
+                "height": 20
+            }
+        },
+        "sfx_panel": {
+            "position": {
+                "x": 1202,
+                "y": 565,
+                "width": 238,
+                "height": 144
+            }
+        },
+        "sfx_search": {
+            "position": {
+                "x": 0,
+                "y": 125,
+                "width": 238,
+                "height": 20
+            }
+        },
+        "sfx_list": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 238,
+                "height": 125
+            },
+            "font": {
+                "name": "Fairfax OTF",
+                "size": 9,
+                "bold": true,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "found_sfx_color": "#0F0F0F",
+                "missing_sfx_color": "#000000"
+            }
+        },
+        "animation_toggle": {
+            "position": {
+                "x": 446,
+                "y": 604,
+                "width": 19,
+                "height": 14
+            }
+        }
+    }
+}

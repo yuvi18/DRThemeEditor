@@ -1,0 +1,760 @@
+{
+    "config": {
+        "enable_single_shout": true,
+        "enable_single_effect": true,
+        "enable_single_wtce": true,
+        "enable_const_music_speed": true,
+        "music_scroll_speed": 48000,
+        "enable_showname_image": false,
+        "enable_highlighting": true,
+        "enable_button_images": true,
+        "enable_label_images": true,
+        "enable_music_and_area_list_separation": true,
+        "enable_cycle_ding": true,
+        "use_toggles": true,
+        "detatchable_viewport": true,
+        "timer_number": 1,
+        "colors": [
+            {
+                "color": "white",
+                "code": "#FFFFFF"
+            },
+            {
+                "color": "green",
+                "code": "#95D558"
+            },
+            {
+                "color": "red",
+                "code": "#E33E32"
+            },
+            {
+                "color": "orange",
+                "code": "#FF8029"
+            },
+            {
+                "color": "blue",
+                "code": "#28BDE5"
+            },
+            {
+                "color": "yellow",
+                "code": "#FED151"
+            },
+            {
+                "color": "purple",
+                "code": "#F776FD"
+            },
+            {
+                "color": "pink",
+                "code": "#FD7B89"
+            }
+        ],
+        "highlights": [
+            {
+                "chars": "[]",
+                "color": "#64FF3C",
+                "keep_characters": true
+            },
+            {
+                "chars": "()",
+                "color": "#66E6FF",
+                "keep_characters": true
+            },
+            {
+                "chars": "//",
+                "color": "#eba100",
+                "keep_characters": false
+            },
+            {
+                "chars": "||",
+                "color": "#0A6FE8",
+                "keep_characters": false
+            },
+            {
+                "chars": "**",
+                "color": "#FFE401",
+                "keep_characters": true
+            },
+            {
+                "chars": "++",
+                "color": "#B652B8",
+                "keep_characters": false
+            },
+            {
+                "chars": "##",
+                "color": "#FF0202",
+                "keep_characters": false
+            },
+            {
+                "chars": "☠☠",
+                "color": "#5B5A53",
+                "keep_characters": true
+            }
+        ]
+    },
+    "free_blocks": [
+        {
+            "name": "dark"
+        },
+        {
+            "name": "chamber"
+        },
+        {
+            "name": "redbar"
+        },
+        {
+            "name": "palebar"
+        }
+    ],
+    "layers": [
+        {
+            "widget_name": "opengl_display"
+        },
+        {
+            "widget_name": "free_block_musicpulse"
+        },
+        {
+            "widget_name": "vp_effect"
+        },
+        {
+            "widget_name": "vp_objection"
+        },
+        {
+            "widget_name": "showname_image"
+        },
+        {
+            "widget_name": "area_desc"
+        },
+        {
+            "widget_name": "area_look"
+        },
+        {
+            "widget_name": "ic_chatlog"
+        },
+        {
+            "widget_name": "server_chatlog"
+        },
+        {
+            "widget_name": "area_list"
+        },
+        {
+            "widget_name": "music_list"
+        },
+        {
+            "widget_name": "sfx_list"
+        },
+        {
+            "widget_name": "ooc_chat_message"
+        },
+        {
+            "widget_name": "ooc_chat_name"
+        },
+        {
+            "widget_name": "ao2_ic_chat_message"
+        },
+        {
+            "widget_name": "ic_chat_name"
+        },
+        {
+            "widget_name": "viewport",
+            "children": [
+                "background",
+                "player_char",
+                "desk"
+            ]
+        },
+		{ "widget_name": "free_block_dark" },
+		{ "widget_name": "free_block_redbar" },
+		{ "widget_name": "free_block_palebar" },
+        {
+            "widget_name": "ao2_chatbox",
+            "children": [
+                "showname",
+                "message",
+                "chat_arrow",
+                "free_block_case",
+                "free_block_stripes"
+            ]
+        },
+        {
+            "widget_name": "shouts_player"
+        },
+        {
+            "widget_name": "chat_arrow"
+        },
+        {
+            "widget_name": "free_block_chamber"
+        },
+        {
+            "widget_name": "music_display_a",
+            "children": [
+                "music_area"
+            ]
+        },
+        {
+            "widget_name": "music_area",
+            "children": [
+                "music_name"
+            ]
+        },
+        {
+            "widget_name": "clock"
+        },
+        {
+            "widget_name": "free_block_musiclines"
+        },
+        {
+            "widget_name": "loading"
+        },
+        {
+            "widget_name": "area_search"
+        },
+        {
+            "widget_name": "music_search"
+        },
+        {
+            "widget_name": "sfx_search"
+        },
+        {
+            "widget_name": "set_notes_button"
+        },
+        {
+            "widget_name": "player_list_left"
+        },
+        {
+            "widget_name": "player_list_right"
+        },
+        {
+            "widget_name": "emotes"
+        },
+        {
+            "widget_name": "emote_left"
+        },
+        {
+            "widget_name": "emote_right"
+        },
+        {
+            "widget_name": "emote_dropdown"
+        },
+        {
+            "widget_name": "pos_dropdown"
+        },
+        {
+            "widget_name": "iniswap_dropdown"
+        },
+        {
+            "widget_name": "defense_bar"
+        },
+        {
+            "widget_name": "prosecution_bar"
+        },
+        {
+            "widget_name": "holdit"
+        },
+        {
+            "widget_name": "objection"
+        },
+        {
+            "widget_name": "takethat"
+        },
+        {
+            "widget_name": "custom"
+        },
+        {
+            "widget_name": "gotit"
+        },
+        {
+            "widget_name": "crossswords"
+        },
+        {
+            "widget_name": "counteralt"
+        },
+        {
+            "widget_name": "perjury"
+        },
+        {
+            "widget_name": "shout_up"
+        },
+        {
+            "widget_name": "shout_down"
+        },
+        {
+            "widget_name": "effect_flash"
+        },
+        {
+            "widget_name": "effect_question"
+        },
+        {
+            "widget_name": "effect_gloom"
+        },
+        {
+            "widget_name": "effect_pow"
+        },
+        {
+            "widget_name": "effect_heart"
+        },
+        {
+            "widget_name": "effect_stress"
+        },
+        {
+            "widget_name": "effect_knock"
+        },
+        {
+            "widget_name": "effect_down"
+        },
+        {
+            "widget_name": "effect_up"
+        },
+        {
+            "widget_name": "witnesstestimony"
+        },
+        {
+            "widget_name": "crossexamination"
+        },
+        {
+            "widget_name": "investigation"
+        },
+        {
+            "widget_name": "nonstop"
+        },
+        {
+            "widget_name": "wtce_up"
+        },
+        {
+            "widget_name": "wtce_down"
+        },
+        {
+            "widget_name": "change_character"
+        },
+        {
+            "widget_name": "config_panel"
+        },
+        {
+            "widget_name": "call_mod"
+        },
+        {
+            "widget_name": "switch_area_music"
+        },
+        {
+            "widget_name": "note_button"
+        },
+        {
+            "widget_name": "pre"
+        },
+        {
+            "widget_name": "flip"
+        },
+        {
+            "widget_name": "hidden"
+        },
+        {
+            "widget_name": "defense_plus"
+        },
+        {
+            "widget_name": "defense_minus"
+        },
+        {
+            "widget_name": "prosecution_plus"
+        },
+        {
+            "widget_name": "prosecution_minus"
+        },
+        {
+            "widget_name": "text_color"
+        },
+        {
+            "widget_name": "evidence_button"
+        },
+        {
+            "widget_name": "notepad_image"
+        },
+        {
+            "widget_name": "notepad"
+        },
+        {
+            "widget_name": "evidence_background",
+            "children": [
+                "evidence_buttons"
+            ]
+        },
+        {
+            "widget_name": "free_block_timerplate"
+        },
+        {
+            "widget_name": "timer_0"
+        },
+        {
+            "widget_name": "vp_wtce"
+        },
+        {
+            "widget_name": "note_scroll_area",
+            "children": [
+                "note_area"
+            ]
+        },
+        {
+            "widget_name": "video"
+        },
+        {
+            "widget_name": "player_list"
+        },
+        {
+            "widget_name": "notify_popup"
+        },
+        {
+            "widget_name": "evidence_image"
+        },
+        {
+            "widget_name": "evidence_description"
+        },
+        {
+            "widget_name": "evidence_list"
+        },
+        {
+            "widget_name": "chara_animations"
+        },
+        {
+            "widget_name": "free_block_evidence_overlay"
+        },
+        {
+            "widget_name": "free_block_speaker_pixels"
+        },
+        {
+            "widget_name": "pair_offset"
+        },
+        {
+            "widget_name": "investigate_display"
+        },
+        {
+            "widget_name": "char_select",
+            "children": [
+                "char_buttons",
+                "char_select_left",
+                "char_select_right",
+                "spectator",
+                "back_to_lobby",
+                "character_search",
+                "character_packages",
+                "char_select_refresh",
+                "char_select_random"
+            ]
+        }
+    ],
+    "courtroom": {
+        "emote_preview": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 230,
+                "height": 180
+            }
+        },
+        "courtroom": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 1440,
+                "height": 710
+            }
+        },
+        "viewport": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 960,
+                "height": 544
+            }
+        },
+        "shouts_player": {
+            "position": {
+                "x": 240,
+                "y": 400,
+                "width": 960,
+                "height": 540
+            }
+        },
+        "chatbox": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 960,
+                "height": 544
+            }
+        },
+        "ao2_chatbox": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 960,
+                "height": 544
+            }
+        },
+        "showname": {
+            "position": {
+                "x": -20,
+                "y": 490,
+                "width": 960,
+                "height": 120
+            },
+            "font": {
+                "name": "Fragments Bold",
+                "size": 22,
+                "bold": true,
+                "color": "#FFFFFF",
+                "align": "right"
+            }
+        },
+        "showname_right": {
+            "position": {
+                "x": 0,
+                "y": 45,
+                "width": 960,
+                "height": 120
+            },
+            "font": {
+                "name": "Fragments Bold",
+                "size": 22,
+                "bold": true,
+                "color": "#FFFFFF",
+                "align": "left"
+            }
+        },
+        "showname_left": {
+            "position": {
+                "x": -20,
+                "y": 490,
+                "width": 960,
+                "height": 120
+            },
+            "font": {
+                "name": "Fragments Bold",
+                "size": 22,
+                "bold": true,
+                "color": "#FFFFFF",
+                "align": "right"
+            }
+        },
+        "message": {
+            "position": {
+                "x": 45,
+                "y": 197,
+                "width": 870,
+                "height": 150
+            },
+            "font": {
+                "name": "Poor Richard",
+                "size": 34,
+                "bold": true,
+                "color": "#FFFFFF",
+                "outline": true,
+                "align": "center, center"
+            }
+        },
+        "chat_arrow": {
+            "position": {
+                "x": 1150,
+                "y": 495,
+                "width": 34,
+                "height": 36
+            }
+        },
+        "loading": {
+            "position": {
+                "x": 888,
+                "y": 440,
+                "width": 64,
+                "height": 64
+            }
+        },
+        "ic_chatlog": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 240,
+                "height": 399
+            },
+            "font": {
+                "name": "Sarasa Fixed J",
+                "size": 11,
+                "outline": false,
+                "message_color": "#F0F0F0",
+                "system_color": "#3693E0",
+                "system_bold": true,
+                "showname_color": "#FFFFFF",
+                "selfname_color": "#F33F3F",
+                "showname_bold": true
+            },
+            "settings": {
+                "hide_frame": true
+            }
+        },
+        "server_chatlog": {
+            "position": {
+                "x": 1201,
+                "y": 399,
+                "width": 240,
+                "height": 145
+            },
+            "font": {
+                "name": "Fairfax OTF",
+                "size": 9,
+                "bold": false,
+                "color": "#F0F0F0"
+            },
+            "settings": {
+                "hide_frame": true
+            }
+        },
+		"music_name": {
+			"position": {"x": -400, "y": -9, "width": 2000, "height": 275 },
+			"font": {"name": "SourceSanstalic Bold", "size": 18, "bold": false, "color": "#FFFFFF" }
+		},
+		"music_display_a": { "position": {"x": 240, "y": 0, "width": 960, "height": 544 } },
+		"music_area": { "position": {"x": 0, "y": 0, "width": 815, "height": 275} },
+		"timer_0": {
+			"position": {"x": 1067, "y": -7, "width": 144, "height": 100 },
+			"font": {"name": "Source Sans Pro", "size": 20, "bold": true, "outline": true, "color": "#FFFFFF" }
+		},
+        "free_block_case": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 184,
+                "height": 351
+            }
+        },
+        "free_block_stripes": {
+            "position": {
+                "x": 0,
+                "y": 39,
+                "width": 180,
+                "height": 312
+            }
+        },
+        "clock": {
+            "position": {
+                "x": 660,
+                "y": 0,
+                "width": 300,
+                "height": 300
+            }
+        },
+        "notepad": {
+            "position": {
+                "x": 961,
+                "y": 0,
+                "width": 239,
+                "height": 266
+            },
+            "font": {
+                "name": "Source Sans Pro",
+                "size": 8,
+                "bold": true,
+                "color": "#F0F0F0"
+            }
+        },
+        "notepad_image": {
+            "position": {
+                "x": 961,
+                "y": 0,
+                "width": 239,
+                "height": 266
+            }
+        },
+        "note_area": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 325,
+                "height": 322
+            }
+        },
+        "add_button": {
+            "position": {
+                "x": 0,
+                "y": 0,
+                "width": 60,
+                "height": 60
+            }
+        },
+        "ic_chat_message": {
+            "position": {
+                "x": 237,
+                "y": 543,
+                "width": 965,
+                "height": 23
+            }
+        },
+        "ao2_ic_chat_message": {
+            "position": {
+                "x": 237,
+                "y": 542,
+                "width": 965,
+                "height": 24
+            }
+        },
+        "ooc_chat_message": {
+            "position": {
+                "x": 1250,
+                "y": 544,
+                "width": 190,
+                "height": 20
+            }
+        },
+        "ooc_chat_name": {
+            "position": {
+                "x": 1200,
+                "y": 544,
+                "width": 52,
+                "height": 20
+            }
+        },
+        "config_panel": {
+            "position": {
+                "x": 1170,
+                "y": 681,
+                "width": 26,
+                "height": 26
+            }
+        },
+        "pair_offset": {
+            "position": {
+                "x": 90,
+                "y": 613,
+                "width": 280,
+                "height": 20
+            }
+        },
+        "free_block_redbar": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 960,
+                "height": 35
+            }
+        },
+        "free_block_palebar": {
+            "position": {
+                "x": 1050,
+                "y": 0,
+                "width": 8,
+                "height": 31
+            }
+        },
+        "free_block_chamber": {
+            "position": {
+                "x": 240,
+                "y": 362,
+                "width": 183,
+                "height": 182
+            }
+        },
+        "free_block_dark": {
+            "position": {
+                "x": 240,
+                "y": 0,
+                "width": 960,
+                "height": 544
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+{
+	"viewport":
+	{
+		"chatbox": { "position": {"x": 0, "y": 0, "width": 960, "height": 544 } },
+		"showname": 
+		{
+			"position": {"x": 4, "y": 440, "width": 892, "height": 159, "rotation": -90 },
+			"font": {"name": "Fragments Bold", "size": 22, "bold": true, "color": "#222222" }
+		},
+		"message": 
+		{ 
+			"position": {"x": 88, "y": 433, "width": 806, "height": 100 },
+			"font": {"name": "Fragments", "size": 21, "bold": false } 
+		},
+		"overlay": { "position": {"x": 0, "y": 0, "width": 960, "height": 544 } }
+	}
+}

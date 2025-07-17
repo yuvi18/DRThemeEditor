@@ -1,0 +1,32 @@
+{
+  "config": {
+    "highlights": [
+      { "chars": "[]", "color": "#00FF00", "keep_characters": true },
+      { "chars": "()", "color": "#09D4EF", "keep_characters": true }
+    ]
+  },  
+  "free_blocks": [
+    { "name": "bubble" },
+    { "name": "time" }
+  ],
+  "courtroom": 
+  {  
+    "showname": { 
+		"font": {"name": "Fragments Bold", "size": 22, "bold": true, "color": "#222222" } 
+	},
+    "music_name": { 
+		"font": {"name": "FiveByFive", "size": 12, "bold": false, "color": "#236A00" } 
+	},
+	"area_desc": { 
+		"font": {"name": "Source Sans Pro", "size": 11, "color": "#F0F0F0" } 
+	},
+    "ic_chatlog": {
+      "font": { "name": "Sarasa Fixed J", "size": 11, "outline": false,
+        "message_color": "#F0F0F0",
+        "system_color": "#3693E0", "system_bold": true,
+        "showname_color": "#FFFFFF",  "showname_bold": true,
+        "selfname_color": "#00FF3A"
+      }
+    }
+  }
+}

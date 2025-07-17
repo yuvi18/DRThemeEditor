@@ -1,0 +1,347 @@
+{
+    "config": 
+	{
+        "highlights": 
+		[
+			{ "chars": "[]", "color": "#00FF00", "keep_characters": true },
+			{ "chars": "()", "color": "#09D4EF", "keep_characters": true }
+        ]
+    },
+    "free_blocks": 
+	[
+		{ "name": "time" }
+    ],
+    "layers": [
+        { "widget_name": "free_block_musicpulse"  },
+        {
+            "widget_name": "vp_effect"
+        },
+        {
+            "widget_name": "vp_objection"
+        },
+        {
+            "widget_name": "showname_image"
+        },
+        {
+            "widget_name": "area_desc"
+        },
+        {
+            "widget_name": "area_look"
+        },
+        {
+            "widget_name": "ic_chatlog"
+        },
+        {
+            "widget_name": "server_chatlog"
+        },
+        {
+            "widget_name": "area_list"
+        },
+        {
+            "widget_name": "music_list"
+        },
+        {
+            "widget_name": "sfx_list"
+        },
+        {
+            "widget_name": "ooc_chat_message"
+        },
+        {
+            "widget_name": "ooc_chat_name"
+        },
+        {
+            "widget_name": "ao2_ic_chat_message"
+        },
+        {
+            "widget_name": "ic_chat_name"
+        },
+        {
+            "widget_name": "viewport",
+            "children": [
+                "background",
+                "player_char",
+                "desk",
+                "free_block_musicpulse",
+                "ao2_chatbox",
+                "music_display_a",
+                "music_display_b"
+            ]
+        },
+        {
+            "widget_name": "ao2_chatbox",
+            "children": [
+                "showname",
+                "message",
+                "chat_arrow",
+                "free_block_bubble"
+            ]
+        },
+        {
+            "widget_name": "shouts_player"
+        },
+        {
+            "widget_name": "chat_arrow"
+        },
+        {
+            "widget_name": "music_display_a",
+            "children": [
+                "music_area"
+            ]
+        },
+        {
+            "widget_name": "music_area",
+            "children": [
+                "music_name"
+            ]
+        },
+		{ "widget_name": "free_block_time" },
+        {
+            "widget_name": "clock"
+        },
+        {
+            "widget_name": "free_block_musiclines"
+        },
+        {
+            "widget_name": "loading"
+        },
+        {
+            "widget_name": "area_search"
+        },
+        {
+            "widget_name": "music_search"
+        },
+        {
+            "widget_name": "sfx_search"
+        },
+        {
+            "widget_name": "set_notes_button"
+        },
+        {
+            "widget_name": "player_list_left"
+        },
+        {
+            "widget_name": "player_list_right"
+        },
+        {
+            "widget_name": "emotes"
+        },
+        {
+            "widget_name": "emote_left"
+        },
+        {
+            "widget_name": "emote_right"
+        },
+        {
+            "widget_name": "emote_dropdown"
+        },
+        {
+            "widget_name": "pos_dropdown"
+        },
+        {
+            "widget_name": "iniswap_dropdown"
+        },
+        {
+            "widget_name": "defense_bar"
+        },
+        {
+            "widget_name": "prosecution_bar"
+        },
+        {
+            "widget_name": "holdit"
+        },
+        {
+            "widget_name": "objection"
+        },
+        {
+            "widget_name": "takethat"
+        },
+        {
+            "widget_name": "custom"
+        },
+        {
+            "widget_name": "gotit"
+        },
+        {
+            "widget_name": "crossswords"
+        },
+        {
+            "widget_name": "counteralt"
+        },
+        {
+            "widget_name": "perjury"
+        },
+        {
+            "widget_name": "shout_up"
+        },
+        {
+            "widget_name": "shout_down"
+        },
+        {
+            "widget_name": "effect_flash"
+        },
+        {
+            "widget_name": "effect_question"
+        },
+        {
+            "widget_name": "effect_gloom"
+        },
+        {
+            "widget_name": "effect_pow"
+        },
+        {
+            "widget_name": "effect_heart"
+        },
+        {
+            "widget_name": "effect_stress"
+        },
+        {
+            "widget_name": "effect_knock"
+        },
+        {
+            "widget_name": "effect_down"
+        },
+        {
+            "widget_name": "effect_up"
+        },
+        {
+            "widget_name": "witnesstestimony"
+        },
+        {
+            "widget_name": "crossexamination"
+        },
+        {
+            "widget_name": "investigation"
+        },
+        {
+            "widget_name": "nonstop"
+        },
+        {
+            "widget_name": "wtce_up"
+        },
+        {
+            "widget_name": "wtce_down"
+        },
+        {
+            "widget_name": "change_character"
+        },
+        {
+            "widget_name": "config_panel"
+        },
+        {
+            "widget_name": "call_mod"
+        },
+        {
+            "widget_name": "switch_area_music"
+        },
+        {
+            "widget_name": "note_button"
+        },
+        {
+            "widget_name": "pre"
+        },
+        {
+            "widget_name": "flip"
+        },
+        {
+            "widget_name": "hidden"
+        },
+        {
+            "widget_name": "defense_plus"
+        },
+        {
+            "widget_name": "defense_minus"
+        },
+        {
+            "widget_name": "prosecution_plus"
+        },
+        {
+            "widget_name": "prosecution_minus"
+        },
+        {
+            "widget_name": "text_color"
+        },
+        {
+            "widget_name": "evidence_button"
+        },
+        {
+            "widget_name": "notepad_image"
+        },
+        {
+            "widget_name": "notepad"
+        },
+        {
+            "widget_name": "evidence_background",
+            "children": [
+                "evidence_buttons"
+            ]
+        },
+        {
+            "widget_name": "free_block_timerplate"
+        },
+        {
+            "widget_name": "timer_0"
+        },
+        {
+            "widget_name": "vp_wtce"
+        },
+        {
+            "widget_name": "note_scroll_area",
+            "children": [
+                "note_area"
+            ]
+        },
+        {
+            "widget_name": "video"
+        },
+        {
+            "widget_name": "player_list"
+        },
+        {
+            "widget_name": "evidence_image"
+        },
+        {
+            "widget_name": "evidence_description"
+        },
+        {
+            "widget_name": "evidence_list"
+        },
+        {
+            "widget_name": "chara_animations"
+        },
+        {
+            "widget_name": "free_block_evidence_overlay"
+        },
+        {
+            "widget_name": "free_block_speaker_pixels"
+        },
+        {
+            "widget_name": "pair_offset"
+        },
+        {
+            "widget_name": "investigate_display"
+        },
+        {
+            "widget_name": "notify_popup"
+        },
+        {
+            "widget_name": "char_select",
+            "children": [
+                "char_buttons",
+                "char_select_left",
+                "char_select_right",
+                "spectator",
+                "back_to_lobby",
+                "character_search",
+                "character_packages",
+                "char_select_refresh",
+                "char_select_random"
+            ]
+        }
+    ],
+  "courtroom": {
+    "showname": { "position": {"x": 10, "y": -2, "width": 960, "height": 120}, "font": {"name": "Fragments Bold", "size": 22, "bold": true, "color": "#222222" } },
+    "showname_left": { "font": {"name": "Fragments Bold", "size": 22, "bold": true, "color": "#222222", "align": "left" } },
+    "showname_right": { "font": {"name": "Fragments Bold", "size": 22, "bold": true, "color": "#222222", "align": "right" } },
+	"area_desc": { "font": {"name": "Source Sans Pro", "size": 11, "color": "#F0F0F0" } }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "replays": 
+  {
+    "replay_window": { "position": {"x": 0, "y": 0, "width": 960, "height": 544 } },
+    "viewport": { "position": {"x": 0, "y": 0, "width": 960, "height": 544 } },
+    "scrubber": { "position": {"x": 10, "y": 10, "width": 940, "height": 20 } },
+    "playback_hover_field": { "position": {"x": 830, "y": 0, "width": 128, "height": 100 } },
+    "playback_mode": { "position": {"x": 23, "y": 8, "width": 97, "height": 26 } },
+    "controller": { "position": {"x": 0, "y": 510, "width": 960, "height": 30 } },
+    "return_to_lobby": { "position": {"x": 33, "y": 53, "width": 51, "height": 51 } }
+  }
+}

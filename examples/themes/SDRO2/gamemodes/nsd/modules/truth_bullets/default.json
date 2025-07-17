@@ -1,0 +1,108 @@
+{
+    "courtroom": {
+        "objection": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "holdit": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "gotit": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "takethat": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "custom": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "crossswords": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "counteralt": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "perjury": {
+            "position": {
+                "x": 67,
+                "y": 575,
+                "width": 200,
+                "height": 68
+            }
+        },
+        "free_block_barrel": {
+            "position": {
+                "x": -65,
+                "y": 550,
+                "width": 130,
+                "height": 130
+            }
+        },
+        "free_block_barrellines": {
+            "position": {
+                "x": -65,
+                "y": 550,
+                "width": 130,
+                "height": 130
+            }
+        },
+        "bullet": {
+            "position": {
+                "x": 390,
+                "y": 465,
+                "width": 0,
+                "height": 0
+            }
+        },
+        "shout_up": {
+            "position": {
+                "x": 329,
+                "y": 476,
+                "width": 22,
+                "height": 17
+            }
+        },
+        "shout_down": {
+            "position": {
+                "x": 329,
+                "y": 502,
+                "width": 22,
+                "height": 17
+            }
+        }
+    }
+}

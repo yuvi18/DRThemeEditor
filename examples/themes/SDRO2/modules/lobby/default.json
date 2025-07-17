@@ -1,0 +1,51 @@
+{
+  "lobby": {
+    "lobby": { "position": {"x": 0, "y": 0, "width": 1200, "height": 702 } },
+    "public_servers": { "position": {"x": 364, "y": 641, "width": 250, "height": 34 } },
+    "favorites": { "position": {"x": 42, "y": 641, "width": 250, "height": 34 } },
+    "refresh": { "position": {"x": 243, "y": 121, "width": 145, "height": 32 } },
+    "add_to_fav": { "position": {"x": 387, "y": 121, "width": 218, "height": 32 } },
+    "connect": { "position": {"x": 923, "y": 595, "width": 181, "height": 66 } },
+    "version": { "position": {"x": 470, "y": 1, "width": 0, "height": 0 } },
+    "replay_packages": { "position": {"x": 65, "y": 104, "width": 332, "height": 33 } },
+    "replay_category": { "position": {"x": 403, "y": 104, "width": 190, "height": 33 } },
+    "replay_preview": { "position": {"x": 673, "y": 217, "width": 467, "height": 265 } },
+	"toggle_gallery": { "position": {"x": 1125, "y": 625, "width": 80, "height": 80 } },
+    "play_replay": { "position": {"x": 708, "y": 500, "width": 397, "height": 27 } },
+    "replay_list": 
+	{ 
+		"position": {"x": 65, "y": 148, "width": 528, "height": 528 },
+		"font": { "name": "Source Sans Pro", "size": 14, "bold": false, "color": "#000000", "align": "center" } 
+	},
+    "config_panel": { "position": {"x": 1113, "y": 24, "width": 64, "height": 64 } },
+    "about": { "position": {"x": -100, "y": 0, "width": 111, "height": 19 } },
+    "server_list": {
+		"position": {"x": 61, "y": 157, "width": 541, "height": 482 },
+		"font": { "name": "Source Sans Pro", "size": 14, "bold": false, "color": "#000000", "align": "center" }
+    },
+    "player_count": {
+		"position": {"x": 642, "y": 142, "width": 466, "height": 45 },
+		"font": { "name": "Source Sans Pro", "size": 14, "bold": true, "color": "#FFFFFF", "align": "center" }
+    },
+    "description": {
+		"position": {"x": 705, "y": 261, "width": 334, "height": 334 },
+		"font": { "name": "Source Sans Pro", "size": 10, "bold": true, "color": "#FFFFFF"}
+    },
+    "chatbox": {
+		"position": {"x": 100000, "y": 500, "width": 1199, "height": 200 },
+		"font": { "name": "Source Sans Pro", "size": 10, "bold": false, "color": "#FFFFFF"}
+    },
+    "chatname": {
+		"position": {"x": 1000303, "y": 620, "width": 0, "height": 0 },
+		"font": { "name": "Source Sans Pro", "size": 10, "bold": false, "color": "#FFFFFF"}
+    },
+    "chatmessage": { 
+		"position": {"x": 1000393, "y": 620, "width": 0, "height": 0 }, 
+		"font": { "name": "Source Sans Pro", "size": 10, "bold": false, "color": "#FFFFFF"} 
+	},
+    "loading_label": { "position": {"x": 475, "y": 120, "width": 254, "height": 95 } },
+    "loading_text": { "font": { "name": "Orbitron", "size": 20, "bold": true, "color": "#FFFFFF", "align": "center" }},
+    "progress_bar": { "position": {"x": 25, "y": 451, "width": 1165, "height": 21 } },
+    "cancel": { "position": {"x": 530, "y": 260, "width": 160, "height": 40 } }
+  }
+}

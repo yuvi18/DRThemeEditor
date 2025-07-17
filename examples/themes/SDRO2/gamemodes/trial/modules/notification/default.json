@@ -1,0 +1,10 @@
+{
+	"courtroom":
+	{
+		"notify_popup": 
+		{ 
+			"position": { "x": 962, "y": 75, "width": 235, "height": 135 },
+			"font": { "name": "FiveByFive", "size": 12, "color": "#FFFFFF", "bold": false, "sharp": true, "align": "center, center" }
+		}
+	}
+}

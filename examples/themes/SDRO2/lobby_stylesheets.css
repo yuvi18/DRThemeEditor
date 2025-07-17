@@ -1,0 +1,91 @@
+[DESCRIPTION]
+
+QTextBrowser {
+	background-color: transparent;
+	font-size: 18px;
+	color: white;
+	font-family: Source Sans Pro;
+                font-style: oblique;
+                font-weight: bold;
+	border-radius: 3px;
+	border-color: white;
+}
+
+[REPLAY PACKAGES]
+
+QComboBox {
+border: 2px solid transparent;
+background-color: transparent;
+color: #FFDD34;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: rgba(176, 155, 79, 150);
+color: white;
+border-radius: 0px;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+background-color: transparent;}
+
+[REPLAY LIST]
+
+QListView::item { padding-left: 0px; }
+
+QListView {
+	background-color: transparent;
+	border-radius: 3px;
+	border-color: white;
+	font-family: Fixedsys Excelsior OTF;}
+
+}
+
+QListWidget {
+	border-spacing: 5px;
+	border-radius: 5px;
+                border-style: solid;
+	border-color: white;
+	font-size: 12pt;
+	font-family: Source Sans Pro;
+	color: white;
+}
+
+[SERVER LIST]
+
+QListView::item { padding-left: 0px; }
+
+QListView {
+	background-color: transparent;
+	border-radius: 3px;
+	border-color: white;
+	font-family: Fixedsys Excelsior OTF;}
+
+}
+
+QListWidget {
+	border-spacing: 5px;
+	border-radius: 5px;
+                border-style: solid;
+	border-color: white;
+	font-size: 12pt;
+	font-family: Source Sans Pro;
+	color: white;
+}
+
+[CHAT BOX]
+
+QTextBrowser {
+	background-color: transparent;
+	color: white;
+	font-size: 10px;
+	font-family: Source Sans Pro;
+                 font-style: oblique;
+                 font-weight: bold;
+	color: white;
+	border-radius: 0px;
+	border-color: transparent;
+}
+
+[END]

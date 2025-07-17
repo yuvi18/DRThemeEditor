@@ -1,0 +1,25 @@
+{
+  "free_blocks": [
+    { "name": "bubble" },
+    { "name": "time" }
+  ],
+  "courtroom": {
+    "ic_chatlog": {
+      "position": {"x": 1202, "y": 0, "width": 240, "height": 516 },
+      "font": {
+        "name": "Sarasa Fixed J",
+        "size": 11,
+        "outline": false,
+        "message_color": "#F0F0F0",
+        "system_color": "#3693E0",
+        "system_bold": true,
+        "showname_color": "#FFFFFF",
+        "selfname_color": "#00FF3A",
+        "showname_bold": true
+      }
+    },
+    "music_name": {
+		"position": {"x": -400, "y": -9, "width": 2000, "height": 275 },
+		"font": {"name": "FiveByFive", "size": 12, "bold": false, "color": "#236A00" }
+    }
+}

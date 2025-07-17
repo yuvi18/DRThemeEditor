@@ -1,0 +1,9 @@
+{
+  "free_blocks": [
+    { "name": "bubble" },
+    { "name": "time" }
+  ],
+  "courtroom": {
+    "clock": { "position": {"x": 10007, "y": 53, "width": 86, "height": 17 } },
+    "sfx_search": { "position": {"x": 886, "y": 679, "width": 125, "height": 18 } }
+}

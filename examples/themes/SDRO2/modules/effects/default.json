@@ -1,0 +1,16 @@
+{
+	"courtroom":
+	{ 
+		"effect": { "position": {"x": 222, "y": 99, "width": 0, "height": 0 } },
+		"effect_up": { "position": {"x": 277, "y": 103, "width": 13, "height": 20 } },
+		"effect_down": { "position": {"x": 198, "y": 103, "width": 13, "height": 20 } },
+		"effect_flash": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_gloom": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_question": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_pow": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_heart": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_knock": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_stress": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } },
+		"effect_shake": { "position": {"x": 170, "y": 657, "width": 44, "height": 29 } }
+	}
+}

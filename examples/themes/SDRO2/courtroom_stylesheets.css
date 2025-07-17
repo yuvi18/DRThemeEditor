@@ -1,0 +1,255 @@
+[PLAYER LIST PROMPT]
+
+QLabel {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 11pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 3px;}
+
+
+[PLAYER NAME]
+
+QLabel {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 11pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 3px;}
+
+[PLAYER ICON]
+
+QLabel {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 11pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 2px;}
+
+[IC LINE]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+QLabel {
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[OOC LINE]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[IC NAME LINE]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[OOC NAME LINE]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[CHAT TYPE]
+
+QComboBox {
+border: 2px solid transparent;
+background-color: transparent;
+color: #FFDD34;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: rgba(176, 155, 79, 150);
+color: white;
+border-radius: 0px;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+
+[TEXT COLOR]
+
+QComboBox {
+border: 2px solid transparent;
+background-color: transparent;
+color: #FFDD34;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: rgba(176, 155, 79, 150);
+color: white;
+border-radius: 0px;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+[POS DROPDOWN]
+
+QComboBox {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 10pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: black;
+color: white;
+border-radius: 0px;
+font-size: 10pt;
+font-family: Source Sans Pro;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+[INISWAP DROPDOWN]
+
+QComboBox {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 10pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid darkgray;
+background-color: black;
+scroll-behavior: smooth;
+color: white;
+border-radius: 0px;
+font-family: Source Sans Pro;
+font-size: 10pt;
+font-style: italic;
+font-weight: bold;
+selection-background-color:  rgba(213, 43, 44, 255);}
+
+[EMOTE DROPDOWN]
+
+QComboBox {
+border: 2px solid transparent;
+background-color: transparent;
+color: #FFDD34;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: rgba(176, 155, 79, 150);
+color: white;
+border-radius: 0px;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+[LINE EDIT]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+QLabel {
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[CATEGORY DROPDOWN]
+
+QComboBox {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(246, 244, 245, 255);
+font-size: 10pt;
+font-style: italic;
+font-weight: bold;
+font-family: Source Sans Pro;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: black;
+color: white;
+border-radius: 0px;
+font-size: 10pt;
+font-family: Source Sans Pro;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+[outfit_selector]
+
+QComboBox {
+border: 2px solid transparent;
+background-color: transparent;
+color: #FFDD34;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+border-radius: 3px;}
+
+QComboBox QAbstractItemView {
+border: 2px solid rgba(20, 0, 20, 150);
+background-color: rgba(176, 155, 79, 150);
+color: white;
+border-radius: 0px;
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;
+selection-background-color: rgba(213, 43, 44, 255);}
+
+[AREA SEARCH]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+[MUSIC SEARCH]
+
+QLineEdit {
+border: 2px solid #C6B52A;
+background-color: rgba(176, 155, 79, 150);
+color: rgba(253, 236, 217, 255);
+font-size: 12pt;
+font-family: Fixedsys Excelsior OTF;}
+
+
+[END]
