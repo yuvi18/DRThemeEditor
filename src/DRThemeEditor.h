@@ -1,22 +1,21 @@
-#ifndef DRTHEMEEDITOR_H
-#define DRTHEMEEDITOR_H
+#pragma once
 
 #include <QMainWindow>
 
-QT_BEGIN_NAMESPACE
-namespace Ui {
-class DRThemeEditor;
-}
-QT_END_NAMESPACE
 
-class DRThemeEditor : public QMainWindow
-{
+/// @file Contains the DRThemeEditor, the main window of the application
+
+
+namespace DR {
+
+/// The `DRThemeEditor` is the main window for the theme editor application. This class is the container for the
+/// configuration pane and the visualization pane.
+class DRThemeEditor : public QMainWindow {
+
     Q_OBJECT
 
 public:
     DRThemeEditor(QWidget *parent = nullptr);
-    ~DRThemeEditor();
-
-private:
 };
-#endif // DRTHEMEEDITOR_H
+
+} // ns DR
