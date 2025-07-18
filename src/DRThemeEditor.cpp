@@ -1,8 +1,11 @@
 #include "DRThemeEditor.h"
 #include "Configuration/ThemeConfigurationPane.h"
+#include "Parser/DRThemeParser.h"
 #include "Visualization/IVisualizationPane.h"
 #include "Visualization/LobbyVisualizationPane.h"
 
+#include <QMenu>
+#include <QMenuBar>
 #include <QVBoxLayout>
 
 namespace DR {
@@ -19,6 +22,9 @@ DRThemeEditor::DRThemeEditor(QWidget *parent) : QMainWindow(parent) {
 
     setCentralWidget(central);
     setWindowTitle("DRThemeEditor");
+
+    QMenu* test = menuBar()->addMenu("File");
+    test->addAction("Upload Theme");
 }
 
 } // ns DR

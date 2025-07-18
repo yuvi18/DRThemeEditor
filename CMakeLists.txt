@@ -18,6 +18,7 @@ set(PROJECT_SOURCES
         src/Visualization/LobbyVisualizationPane.cpp
         src/Visualization/IVisualizationPane.cpp
         src/Configuration/ThemeConfigurationPane.cpp
+        src/Parser/DRThemeParser.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

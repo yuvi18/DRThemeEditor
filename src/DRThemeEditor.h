@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Parser/DRThemeParser.h"
+
 #include <QMainWindow>
 
 
@@ -16,6 +18,7 @@ class DRThemeEditor : public QMainWindow {
 
 public:
     DRThemeEditor(QWidget *parent = nullptr);
+
 };
 
 } // ns DR
