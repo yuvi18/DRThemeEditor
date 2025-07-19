@@ -9,7 +9,7 @@ class IThemeParser {
 public:
     virtual ~IThemeParser() = default;
 
-    virtual void parseTheme(QString themeDirectoryPath) = 0;
+    virtual void parseTheme(const QString& themeDirectoryPath) = 0;
 };
 
 } // ns DR::Parser

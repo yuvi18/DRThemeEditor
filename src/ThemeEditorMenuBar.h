@@ -4,7 +4,8 @@
 
 namespace DR {
 
-/// TODO: Docs
+/// Creates the menu bar used by DRThemeEditor
+/// The menu bar currently only consists of upload functionality to import a theme.
 class ThemeEditorMenuBar : public QMenuBar {
 
     Q_OBJECT
@@ -13,7 +14,7 @@ public:
     explicit ThemeEditorMenuBar(QWidget *parent = nullptr);
 
 signals:
-    /// TODO: Docs
+    /// The public signal emitted from this class whenever the upload action is taken.
     void uploadThemeTriggered();
 };
 

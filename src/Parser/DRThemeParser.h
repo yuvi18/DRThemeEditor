@@ -3,11 +3,16 @@
 #include "IThemeParser.h"
 #include "ThemeEditorMenuBar.h"
 
+#include <QDir>
 #include <QFile>
+#include <QList>
 #include <QMenuBar>
 #include <QString>
 
 namespace DR::Parser {
+
+// forward declaration
+class Module;
 
 /// TODO: Docs
 class DRThemeParser : public QObject, public IThemeParser {
@@ -26,10 +31,13 @@ private slots:
 
 private:
     /// TODO: Docs
-    void parseTheme(QString themeDirectoryPath) final;
+    void parseTheme(const QString& themeDirectoryPath) final;
 
     /// TODO: Docs
-    void parseLobbyModule(QFile& lobbyModule);
+    QList<Module> obtainModules(const QDir& themeDirectory);
+
+    /// TODO: Docs
+    void parseLobbyModule(const QFile& lobbyModule);
 };
 
 } //ns DR::Parser
