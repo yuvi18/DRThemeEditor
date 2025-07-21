@@ -6,6 +6,7 @@
 
 /// @file Contains the DRThemeEditor, the main window of the application
 
+
 // forward declarations
 namespace DR::Parser {
     class DRThemeParser;

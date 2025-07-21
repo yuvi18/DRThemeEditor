@@ -9,6 +9,10 @@
 #include <QMenuBar>
 #include <QString>
 
+
+/// @file This file contains the DRThemeParser, whose purpose is to parse theme folders.
+
+
 namespace DR::Parser {
 
 // forward declaration
@@ -35,6 +39,9 @@ private:
 
     /// TODO: Docs
     QList<Module> obtainModules(const QDir& themeDirectory);
+
+    /// TODO: Docs
+    Module parseModule(const QString& moduleFilePath);
 
     /// TODO: Docs
     void parseLobbyModule(const QFile& lobbyModule);

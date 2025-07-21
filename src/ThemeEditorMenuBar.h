@@ -2,6 +2,10 @@
 
 #include <QMenuBar>
 
+
+/// @file Contains the ThemeEditorMenuBar, the menu bar for the main application..
+
+
 namespace DR {
 
 /// Creates the menu bar used by DRThemeEditor
