@@ -1,8 +1,7 @@
 #include "DRThemeEditor.h"
 #include "ThemeEditorMenuBar.h"
 #include "Configuration/ThemeConfigurationPane.h"
-#include "Visualization/IVisualizationPane.h"
-#include "Visualization/LobbyVisualizationPane.h"
+#include "Visualization/VisualizationPane.h"
 
 #include <QMenu>
 #include <QMenuBar>
@@ -22,10 +21,10 @@ DRThemeEditor::DRThemeEditor(QWidget *parent) : QMainWindow(parent) {
 
 void DRThemeEditor::setupPanes() {
     QVBoxLayout* layout = new QVBoxLayout(centralWidget());
-    Visualization::IVisualizationPane* visualizationPane = new Visualization::LobbyVisualizationPane(this);
+    Visualization::VisualizationPane* visualizationPane = new Visualization::VisualizationPane(this);
     Configuration::ThemeConfigurationPane* configurationPane = new Configuration::ThemeConfigurationPane(this);
 
-    layout->addWidget(visualizationPane->asWidget());
+    layout->addWidget(visualizationPane);
     layout->addWidget(configurationPane);
 }
 
