@@ -40,6 +40,10 @@ public:
     /// @return an optional ThemeModule
     std::optional<ThemeModule> getLobbyThemeModule() final;
 
+signals:
+    /// TODO: Docs
+    void raiseThemeLoadComplete();
+
 private slots:
     /// Prompts a file dialog window which allows a user to select a theme folder.
     /// After selecting a theme folder, the parser will then call parseTheme() on that folder.

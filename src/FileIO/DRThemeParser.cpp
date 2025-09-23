@@ -26,6 +26,8 @@ void DRThemeParser::parseTheme(const QString& themeDirectoryPath) {
     QList<ThemeModule> themeModules = obtainThemeModules(themeDirectory);
 
     lobbyThemeModule_ = findLobbyThemeModule(themeModules);
+
+    raiseThemeLoadComplete();
 }
 
 

@@ -1,5 +1,6 @@
 #pragma once
 
+#include <QLayout>
 #include <QWidget>
 
 
@@ -20,6 +21,7 @@ public:
     void setRootWidget(QWidget* widget);
 
 private:
+    QLayout* layout_;
     QWidget* rootWidget_;
 };
 

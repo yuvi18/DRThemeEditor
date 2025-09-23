@@ -15,7 +15,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         src/main.cpp
         src/DRThemeEditor.cpp
-        src/Generation/LobbyWidgetFactory.cpp
+        src/Generation/LobbyGenerator.cpp
         src/Visualization/VisualizationPane.cpp
         src/Configuration/ThemeConfigurationPane.cpp
         src/FileIO/DRThemeParser.cpp

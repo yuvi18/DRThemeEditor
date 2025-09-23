@@ -1,6 +1,8 @@
 #pragma once
 
 #include "FileIO/DRThemeParser.h"
+#include "Visualization/VisualizationPane.h"
+
 #include <QMainWindow>
 
 
@@ -27,6 +29,7 @@ public:
     DRThemeEditor(QWidget *parent = nullptr);
 
 private:
+    /// TODO: FIX OUT OF DATE DOCUMENTATION
     /// Sets up the default visualization panes for the application.
     /// The visualization pane inherits the IVisualizationPane interface.
     /// The configuration pane is a ThemeConfigurationPane.
@@ -35,7 +38,12 @@ private:
     /// Sets up the ThemeEditorMenuBar for this application.
     void setupMenuBar();
 
-    FileIO::DRThemeParser themeParser;
+    FileIO::DRThemeParser themeParser_;
+    Visualization::VisualizationPane* visualizationPane_;
+
+private slots:
+    /// TODO: DOCUMENTATION
+    void handleThemeLoadComplete();
 };
 
 } // ns DR
