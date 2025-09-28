@@ -15,8 +15,8 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 set(PROJECT_SOURCES
         src/main.cpp
         src/DRThemeEditor.cpp
-        src/Visualization/LobbyVisualizationPane.cpp
-        src/Visualization/IVisualizationPane.cpp
+        src/Generation/ThemeGenerator.cpp
+        src/Visualization/VisualizationPane.cpp
         src/Configuration/ThemeConfigurationPane.cpp
         src/FileIO/DRThemeParser.cpp
         src/ThemeEditorMenuBar.cpp
@@ -30,7 +30,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
     qt_add_executable(DRThemeEditor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        src/FileIO/ThemeModule.h
+        src/FileIO/ThemeModule.cpp
     )
 
 target_include_directories(DRThemeEditor PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)

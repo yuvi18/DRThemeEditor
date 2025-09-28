@@ -9,9 +9,6 @@
 #include <QMenuBar>
 #include <QString>
 
-#include <optional>
-
-
 /// @file This file contains the DRThemeParser, whose purpose is to parse theme folders.
 
 
@@ -35,10 +32,14 @@ public:
     /// @see handleThemeUpload
     void connectParserToThemeEditorMenuBar(ThemeEditorMenuBar* menuBar);
 
-    /// Gets the lobby module if the parser has obtained one.
+    /// Gets a constant reference to the list of theme modules the parser currently has.
     ///
-    /// @return an optional ThemeModule
-    std::optional<ThemeModule> getLobbyThemeModule() final;
+    /// @return The list of theme modules parsed by the parser.
+    const QList<ThemeModule>& getThemeModules() const final;
+
+signals:
+    /// Signals to others that a theme has been parsed by the parser.
+    void raiseThemeLoadComplete();
 
 private slots:
     /// Prompts a file dialog window which allows a user to select a theme folder.
@@ -62,7 +63,7 @@ private:
     ///
     /// @param themeDirectory The root directory of the theme.
     /// @return A list of parsed ThemeModule objects.
-    QList<ThemeModule> obtainThemeModules(const QDir& themeDirectory);
+    QList<FileIO::ThemeModule> buildThemeModules(const QDir& themeDirectory);
 
     /// Parses a single theme module from a JSON file path.
     ///
@@ -70,12 +71,7 @@ private:
     /// @return A parsed ThemeModule.
     ThemeModule parseThemeModule(const QString& themeModuleFilePath);
 
-    /// Finds the lobby module in a list of ThemeModules
-    ///
-    /// @return an optional ThemeModule. If a lobby module isn't found, std::nullopt is returned.
-    std::optional<ThemeModule> findLobbyThemeModule(const QList<ThemeModule>& themeModules);
-
-    std::optional<ThemeModule> lobbyThemeModule_;
+    QList<FileIO::ThemeModule> themeModules_;
 };
 
 } //ns DR::Parser

@@ -6,8 +6,6 @@
 #include <QObject>
 #include <QString>
 
-#include <optional>
-
 namespace DR::FileIO {
 
 DRThemeParser::DRThemeParser(QObject* parent) : QObject(parent){}
@@ -16,16 +14,16 @@ void DRThemeParser::connectParserToThemeEditorMenuBar(ThemeEditorMenuBar* menuBa
     connect(menuBar, &ThemeEditorMenuBar::uploadThemeTriggered, this, &FileIO::DRThemeParser::handleThemeUpload);
 }
 
-std::optional<ThemeModule> DRThemeParser::getLobbyThemeModule() {
-    return lobbyThemeModule_;
+const QList<FileIO::ThemeModule>& DRThemeParser::getThemeModules() const {
+    return themeModules_;
 }
 
 void DRThemeParser::parseTheme(const QString& themeDirectoryPath) {
     QDir themeDirectory(themeDirectoryPath);
 
-    QList<ThemeModule> themeModules = obtainThemeModules(themeDirectory);
+    themeModules_ = buildThemeModules(themeDirectory);
 
-    lobbyThemeModule_ = findLobbyThemeModule(themeModules);
+    raiseThemeLoadComplete();
 }
 
 
@@ -42,7 +40,7 @@ void DRThemeParser::handleThemeUpload() {
     }
 }
 
-QList<ThemeModule> DRThemeParser::obtainThemeModules(const QDir& themeDirectory) {
+QList<ThemeModule> DRThemeParser::buildThemeModules(const QDir& themeDirectory) {
     QList<ThemeModule> themeModules;
     QDir themeModulesDirectory(themeDirectory.filePath("modules"));
 
@@ -82,19 +80,9 @@ ThemeModule DRThemeParser::parseThemeModule(const QString& themeModuleFilePathNa
     }
 
     QString parsedModuleDirPath = QFileInfo(themeModuleFile).absolutePath();
-    ThemeModule themeModule {.moduleDirPath = parsedModuleDirPath, .moduleConfig = themeModuleDoc.object()};
+    ThemeModule themeModule{parsedModuleDirPath, themeModuleDoc.object()};
 
     return themeModule;
-}
-
-std::optional<ThemeModule> DRThemeParser::findLobbyThemeModule(const QList<ThemeModule>& themeModules) {
-    for (const ThemeModule& themeModule : themeModules) {
-        if (themeModule.moduleConfig.contains("lobby")) {
-            return themeModule;
-        }
-    }
-
-    return std::nullopt;
 }
 
 }

@@ -15,10 +15,10 @@ class IThemeParser {
 public:
     virtual ~IThemeParser() = default;
 
-    /// Gets the lobby module if the parser has obtained one.
+    /// Gets the list of theme modules parsed by the parser.
     ///
-    /// @return an optional ThemeModule
-    virtual std::optional<ThemeModule> getLobbyThemeModule() = 0;
+    /// @return A constant reference list of theme modules.
+    virtual const QList<ThemeModule>& getThemeModules() const = 0;
 };
 
 } // ns DR::FileIO
