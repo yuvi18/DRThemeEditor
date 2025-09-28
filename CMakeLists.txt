@@ -30,6 +30,7 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
     qt_add_executable(DRThemeEditor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        src/FileIO/ThemeModule.cpp
     )
 
 target_include_directories(DRThemeEditor PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)

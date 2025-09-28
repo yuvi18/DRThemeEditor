@@ -17,7 +17,6 @@ public:
     QWidget* getLobbyRoot();
 
 private:
-    ThemeModule themeModule_;
     QWidget* lobbyRoot_;
 };
 

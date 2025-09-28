@@ -84,14 +84,14 @@ ThemeModule DRThemeParser::parseThemeModule(const QString& themeModuleFilePathNa
     }
 
     QString parsedModuleDirPath = QFileInfo(themeModuleFile).absolutePath();
-    ThemeModule themeModule {.moduleDirPath = parsedModuleDirPath, .moduleConfig = themeModuleDoc.object()};
+    ThemeModule themeModule{parsedModuleDirPath, themeModuleDoc.object()};
 
     return themeModule;
 }
 
 std::optional<ThemeModule> DRThemeParser::findLobbyThemeModule(const QList<ThemeModule>& themeModules) {
     for (const ThemeModule& themeModule : themeModules) {
-        if (themeModule.moduleConfig.contains("lobby")) {
+        if (themeModule.getModuleConfig().contains("lobby")) {
             return themeModule;
         }
     }
