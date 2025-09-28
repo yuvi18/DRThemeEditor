@@ -8,8 +8,14 @@ VisualizationPane::VisualizationPane(QWidget* parent) {
 }
 
 void VisualizationPane::setRootWidget(QWidget* widget) {
+    if (rootWidget_) {
+        layout_->removeWidget(rootWidget_);
+
+        // The Visualization Pane should not own the resources of the root widget. That is the Theme Generator's job.
+        rootWidget_->setParent(nullptr);
+    }
+
     rootWidget_ = widget;
-    rootWidget_->setParent(this);
     layout_->addWidget(rootWidget_);
 }
 

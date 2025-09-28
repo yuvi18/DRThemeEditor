@@ -1,7 +1,8 @@
 #pragma once
 
-#include "FileIO/DRThemeParser.h"
-#include "Visualization/VisualizationPane.h"
+#include <FileIO/DRThemeParser.h>
+#include <Generation/ThemeGenerator.h>
+#include <Visualization/VisualizationPane.h>
 
 #include <QMainWindow>
 
@@ -29,20 +30,20 @@ public:
     DRThemeEditor(QWidget *parent = nullptr);
 
 private:
-    /// TODO: FIX OUT OF DATE DOCUMENTATION
-    /// Sets up the default visualization panes for the application.
-    /// The visualization pane inherits the IVisualizationPane interface.
-    /// The configuration pane is a ThemeConfigurationPane.
+    /// Sets up the default panes for the application (configuration and visualization)
     void setupPanes();
 
     /// Sets up the ThemeEditorMenuBar for this application.
     void setupMenuBar();
 
     FileIO::DRThemeParser themeParser_;
+    Generation::ThemeGenerator themeGenerator_;
     Visualization::VisualizationPane* visualizationPane_;
 
 private slots:
-    /// TODO: DOCUMENTATION
+    /// This function is called whenever the themeParser_ finishes loading a theme.
+    /// After the theme parser loads a theme, the modules are passed to the generator, where the resulting widget trees are generated.
+    /// Finally, the visualization pane is given the "lobby" widget tree, as a default starting point for the user.
     void handleThemeLoadComplete();
 };
 

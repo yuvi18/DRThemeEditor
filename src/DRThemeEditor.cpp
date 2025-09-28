@@ -1,9 +1,9 @@
 #include "DRThemeEditor.h"
-#include "FileIO/DRThemeParser.h"
+#include <FileIO/DRThemeParser.h>
 #include "ThemeEditorMenuBar.h"
-#include "Configuration/ThemeConfigurationPane.h"
-#include "Generation/LobbyGenerator.h"
-#include "Visualization/VisualizationPane.h"
+#include <Configuration/ThemeConfigurationPane.h>
+#include <Generation/ThemeGenerator.h.>
+#include <Visualization/VisualizationPane.h>
 
 #include <QMenu>
 #include <QMenuBar>
@@ -47,12 +47,9 @@ void DRThemeEditor::setupMenuBar() {
 }
 
 void DRThemeEditor::handleThemeLoadComplete() {
-    std::optional<ThemeModule> themeModule = themeParser_.getLobbyThemeModule();
-    if(themeModule.has_value()) {
-        Generation::LobbyGenerator lobbyGenerator{themeModule.value()};
-        visualizationPane_->setRootWidget(lobbyGenerator.getLobbyRoot());
-    }
-
+    const QList<FileIO::ThemeModule>& parsedThemeModules = themeParser_.getThemeModules();
+    themeGenerator_.generateThemeFromModules(parsedThemeModules);
+    visualizationPane_->setRootWidget(themeGenerator_.getLobbyRoot());
 }
 
 } // ns DR

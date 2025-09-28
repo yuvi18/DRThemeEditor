@@ -4,6 +4,8 @@
 #include <QJsonValue>
 #include <QRect>
 
+namespace DR::FileIO {
+
 ThemeModule::ThemeModule(const QString& moduleDirPath, const QJsonObject& moduleConfig_)
     : moduleDirPath_(moduleDirPath), moduleConfig_(moduleConfig_) {}
 
@@ -54,3 +56,4 @@ QJsonObject ThemeModule::findMemberInModule(const QString &member) const
     return lobbyObj[member].toObject();
 }
 
+}
