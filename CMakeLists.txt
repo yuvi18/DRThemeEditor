@@ -19,6 +19,9 @@ set(PROJECT_SOURCES
         src/Visualization/VisualizationPane.cpp
         src/Configuration/ThemeConfigurationPane.cpp
         src/FileIO/DRThemeParser.cpp
+        src/FileIO/ThemeModule.cpp
+        src/ThemeElement/ThemeButton.cpp
+        src/ThemeElement/ThemeLabel.cpp
         src/ThemeEditorMenuBar.cpp
 )
 
@@ -26,11 +29,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+find_package(Qt6 REQUIRED COMPONENTS Widgets)
 
     qt_add_executable(DRThemeEditor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        src/FileIO/ThemeModule.cpp
     )
 
 target_include_directories(DRThemeEditor PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
@@ -54,6 +57,7 @@ else()
 endif()
 
 target_link_libraries(DRThemeEditor PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
 target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
 target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
 target_link_libraries(DRThemeEditor PRIVATE Qt6::Widgets)
