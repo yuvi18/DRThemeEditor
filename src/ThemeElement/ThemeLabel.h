@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QLabel>
+#include <QRect>
+#include <QString>
 #include <QWidget>
 
 
@@ -14,7 +16,7 @@ namespace DR::ThemeElement {
 class ThemeLabel : public QLabel {
 
 public:
-    // Constructs a label given an image and label geometry.
+    /// Constructs a label given an image and label geometry.
     explicit ThemeLabel(QWidget* parent, const QRect& labelGeometry, const QString& labelImagePath);
 };
 

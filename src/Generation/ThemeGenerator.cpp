@@ -1,10 +1,14 @@
 #include "ThemeGenerator.h"
 
 #include <FileIO/ThemeModule.h>
+#include <Generation/ThemeDefaults.h>
 
 #include <ThemeElement/ThemeButton.h>
 #include <ThemeElement/ThemeLabel.h>
+#include <ThemeElement/ThemeTextBrowser.h>
+#include <ThemeElement/ThemeTextEdit.h>
 
+#include <QFont>
 #include <QPointer>
 #include <QWidget>
 
@@ -40,14 +44,18 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ThemeElement::ThemeButton* ui_refresh = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("refresh"), module.getImageFilePath("refresh"));
     ThemeElement::ThemeButton* ui_connect = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("connect"), module.getImageFilePath("connect"));
 
-    // ThemeElement::ThemeButton* ui_gallery_toggle = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("toggle_gallery"), module.getImageFilePath("toggle_gallery"));
+    ThemeElement::ThemeButton* ui_gallery_toggle = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("toggle_gallery"), module.getImageFilePath("toggle_gallery"));
 
     ThemeElement::ThemeButton* ui_config_panel = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("config_panel"), module.getImageFilePath("lobby_config_panel"));
-    // ui_version = new RPTextEdit("version", this);
-    // ui_version->setFrameStyle(QFrame::NoFrame);
-    // ui_version->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    // ui_version->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    // ui_version->setReadOnly(true);
+
+    ThemeElement::ThemeTextEdit* ui_version = new ThemeElement::ThemeTextEdit(lobbyRoot, module.getGeometryOfMember("version"), {});
+    // TEMPORARY
+    ui_version->setFrameStyle(QFrame::NoFrame);
+    ui_version->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui_version->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui_version->setReadOnly(true);
+    ui_version->setText(ThemeDefaults::VERSION_TEXT);
+
     // ui_server_list = new QListWidget(this);
     // ui_server_list->setContextMenuPolicy(Qt::CustomContextMenu);
 
@@ -59,37 +67,59 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     // ui_move_down_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_DOWN"));
     // ui_delete_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_REMOVE"));
 
-    // ui_player_count = new RPTextEdit("player_count", this);
-    // ui_player_count->setFrameStyle(QFrame::NoFrame);
-    // ui_player_count->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    // ui_player_count->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    // ui_player_count->setWordWrapMode(QTextOption::NoWrap);
-    // ui_player_count->setReadOnly(true);
+    ThemeElement::ThemeTextEdit* ui_player_count = new ThemeElement::ThemeTextEdit(lobbyRoot, module.getGeometryOfMember("player_count"), {});
 
-    // ui_description = new QTextBrowser(this);
-    // ui_description->setOpenExternalLinks(true);
-    // ui_description->setReadOnly(true);
+    // TEMPORARY
+    ui_player_count->setFrameStyle(QFrame::NoFrame);
+    ui_player_count->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui_player_count->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    ui_player_count->setWordWrapMode(QTextOption::NoWrap);
+    ui_player_count->setReadOnly(true);
+    ui_player_count->setStyleSheet("background-color: rgba(0, 0, 0, 0);"
+                                   "font: bold;"
+                                   "color: white;"
+                                   "qproperty-alignment: AlignCenter;");
+
+    ui_player_count->setText(ThemeDefaults::PLAYER_COUNT_TEXT);
+    ui_player_count->setAlignment(Qt::AlignHCenter);
+
+    QFont l_font;
+    // Font priority
+    // 1. "font_" + p_identifier
+    // 2. "font_default"
+    // 3. System font
+    QString font_name = "Source Sans Pro";
+    int f_weight = 10;
+    bool is_bold = true;
+    bool is_antialias = false;
+    QColor l_font_color {"#FFFFFF"};
+
+    if (!font_name.isEmpty())
+    {
+        l_font.setFamily(font_name);
+    }
+
+    l_font.setPointSize(f_weight);
+    l_font.setBold(is_bold);
+
+    if(is_antialias) l_font.setStyleStrategy(QFont::NoAntialias);
+    else{l_font.setStyleStrategy(QFont::PreferDefault);}
+
+    ThemeElement::ThemeTextBrowser* ui_description = new ThemeElement::ThemeTextBrowser(lobbyRoot, module.getGeometryOfMember("description"), l_font);
+    // TEMPORARY
+    ui_description->setOpenExternalLinks(true);
+    ui_description->setReadOnly(true);
+
+    QString style_sheet_string = QString("QTextBrowser { background-color: rgba(0, 0, 0, 0);\n") +
+                                 "color: " + l_font_color.name(QColor::HexArgb) + ";\n" + (is_bold ? "font: bold;" : "") +
+                                 "}";
+    ui_description->setStyleSheet(style_sheet_string);
+
+    ui_description->setText(ThemeDefaults::DESCRIPTION_TEXT);
 
     // ui_chatbox = new DRChatLog(this);
     // ui_chatbox->setOpenExternalLinks(true);
     // ui_chatbox->setReadOnly(true);
-
-    // ui_loading_background = new AOImageDisplay(this, ao_app);
-    // ui_loading_text = new RPTextEdit("loading_label", ui_loading_background);
-    // ui_progress_bar = new QProgressBar(ui_loading_background);
-
-    // ui_progress_bar->setMinimum(0);
-    // ui_progress_bar->setMaximum(100);
-    // ui_progress_bar->setStyleSheet("QProgressBar{ color: white; }");
-
-    // ui_cancel = new RPButton(ui_loading_background);
-
-
-    // ui_replay_list = new QListWidget(ui_gallery_background);
-    // ui_replay_list->setContextMenuPolicy(Qt::CustomContextMenu);
-
-    // ui_gallery_packages = new QComboBox(ui_gallery_background);
-    // ui_gallery_categories = new QComboBox(ui_gallery_background);
 
     return lobbyRoot;
 }

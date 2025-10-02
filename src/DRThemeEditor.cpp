@@ -2,7 +2,7 @@
 #include <FileIO/DRThemeParser.h>
 #include "ThemeEditorMenuBar.h"
 #include <Configuration/ThemeConfigurationPane.h>
-#include <Generation/ThemeGenerator.h.>
+#include <Generation/ThemeGenerator.h>
 #include <Visualization/VisualizationPane.h>
 
 #include <QMenu>

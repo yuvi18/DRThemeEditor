@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QPushButton>
+#include <QRect>
+#include <QString>
 #include <QWidget>
 
 
@@ -14,7 +16,7 @@ namespace DR::ThemeElement {
 class ThemeButton : public QPushButton {
 
 public:
-    // Constructs a label given an image and label geometry.
+    /// Constructs a label given an image and label geometry.
     explicit ThemeButton(QWidget* parent, const QRect& buttonGeometry, const QString& buttonImagePath);
 };
 
