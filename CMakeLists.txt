@@ -22,6 +22,9 @@ set(PROJECT_SOURCES
         src/FileIO/ThemeModule.cpp
         src/ThemeElement/ThemeButton.cpp
         src/ThemeElement/ThemeLabel.cpp
+        src/ThemeElement/ThemeListWidget.cpp
+        src/ThemeElement/ThemeTextBrowser.cpp
+        src/ThemeElement/ThemeTextEdit.cpp
         src/ThemeEditorMenuBar.cpp
 )
 
@@ -34,9 +37,6 @@ find_package(Qt6 REQUIRED COMPONENTS Widgets)
     qt_add_executable(DRThemeEditor
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        src/ThemeElement/ThemeTextEdit.h src/ThemeElement/ThemeTextEdit.cpp
-        src/ThemeElement/ThemeTextBrowser.h src/ThemeElement/ThemeTextBrowser.cpp
-        src/Generation/ThemeDefaults.h
     )
 
 target_include_directories(DRThemeEditor PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)

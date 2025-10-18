@@ -2,8 +2,7 @@
 
 namespace DR::Visualization {
 
-VisualizationPane::VisualizationPane(QWidget* parent) {
-    layout_ = new QVBoxLayout(this);
+VisualizationPane::VisualizationPane(QWidget* parent) : QWidget(parent), layout_(new QVBoxLayout(this)), rootWidget_(nullptr) {
     layout_->setContentsMargins(0,0,0,0);
 }
 

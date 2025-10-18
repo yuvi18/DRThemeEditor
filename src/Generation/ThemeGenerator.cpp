@@ -5,6 +5,7 @@
 
 #include <ThemeElement/ThemeButton.h>
 #include <ThemeElement/ThemeLabel.h>
+#include <ThemeElement/ThemeListWidget.h>
 #include <ThemeElement/ThemeTextBrowser.h>
 #include <ThemeElement/ThemeTextEdit.h>
 
@@ -44,11 +45,12 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ThemeElement::ThemeButton* ui_refresh = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("refresh"), module.getImageFilePath("refresh"));
     ThemeElement::ThemeButton* ui_connect = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("connect"), module.getImageFilePath("connect"));
 
-    ThemeElement::ThemeButton* ui_gallery_toggle = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("toggle_gallery"), module.getImageFilePath("toggle_gallery"));
+    // ThemeElement::ThemeButton* ui_gallery_toggle = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("toggle_gallery"), module.getImageFilePath("toggle_gallery"));
 
     ThemeElement::ThemeButton* ui_config_panel = new ThemeElement::ThemeButton(lobbyRoot, module.getGeometryOfMember("config_panel"), module.getImageFilePath("lobby_config_panel"));
 
     ThemeElement::ThemeTextEdit* ui_version = new ThemeElement::ThemeTextEdit(lobbyRoot, module.getGeometryOfMember("version"), {});
+
     // TEMPORARY
     ui_version->setFrameStyle(QFrame::NoFrame);
     ui_version->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -56,23 +58,36 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ui_version->setReadOnly(true);
     ui_version->setText(ThemeDefaults::VERSION_TEXT);
 
-    // ui_server_list = new QListWidget(this);
-    // ui_server_list->setContextMenuPolicy(Qt::CustomContextMenu);
+    // TEMPORARY
+    QFont serverListFont;
+    serverListFont.setFamily("Source Sans Pro");
+    serverListFont.setPointSize(14);
+    serverListFont.setBold(true);
+    serverListFont.setStyleStrategy(QFont::PreferDefault);
 
-    // ui_server_menu = new QMenu(this);
-    // ui_server_menu->addSection(tr("Server"));
-    // ui_create_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_ADD"));
-    // ui_modify_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_EDIT"));
-    // ui_move_up_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_UP"));
-    // ui_move_down_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_DOWN"));
-    // ui_delete_server = ui_server_menu->addAction(localization::getText("SERVER_FAVORITES_REMOVE"));
+    ThemeElement::ThemeListWidget* ui_server_list = new ThemeElement::ThemeListWidget(lobbyRoot, module.getGeometryOfMember("server_list"), serverListFont);
+
+    QString serverListStyleSheet = QString("QTextBrowser { background-color: rgba(0, 0, 0, 0);\n") +
+                                 "color: " + "#FFFFFF" + ";\n" + (true ? "font: bold;" : "") +
+                                 "}";
+    ui_server_list->setStyleSheet(serverListStyleSheet);
+
+
+    // TEMPORARY
+    ui_server_list->setStyleSheet("background-color: rgba(0, 0, 0, 0);"
+                                   "font: bold;"
+                                   "color: white;"
+                                   "qproperty-alignment: AlignCenter;");
+
+    ThemeDefaults::populateDefaultLobbyServerList(ui_server_list, module.getImageFilePath("favorite_server"), QColor(127, 127, 127, 127));
+
 
     ThemeElement::ThemeTextEdit* ui_player_count = new ThemeElement::ThemeTextEdit(lobbyRoot, module.getGeometryOfMember("player_count"), {});
 
     // TEMPORARY
     ui_player_count->setFrameStyle(QFrame::NoFrame);
-    ui_player_count->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-    ui_player_count->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    // ui_player_count->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    // ui_player_count->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     ui_player_count->setWordWrapMode(QTextOption::NoWrap);
     ui_player_count->setReadOnly(true);
     ui_player_count->setStyleSheet("background-color: rgba(0, 0, 0, 0);"
@@ -94,11 +109,7 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     bool is_antialias = false;
     QColor l_font_color {"#FFFFFF"};
 
-    if (!font_name.isEmpty())
-    {
-        l_font.setFamily(font_name);
-    }
-
+    l_font.setFamily(font_name);
     l_font.setPointSize(f_weight);
     l_font.setBold(is_bold);
 
@@ -117,10 +128,7 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
 
     ui_description->setText(ThemeDefaults::DESCRIPTION_TEXT);
 
-    // ui_chatbox = new DRChatLog(this);
-    // ui_chatbox->setOpenExternalLinks(true);
-    // ui_chatbox->setReadOnly(true);
-
+    // UI Chatbox seems legacy, so as of now there is no parsing for it. I might need to save it to the json though.
     return lobbyRoot;
 }
 
