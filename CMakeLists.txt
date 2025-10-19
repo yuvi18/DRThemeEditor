@@ -21,6 +21,7 @@ set(PROJECT_SOURCES
         src/FileIO/DRThemeParser.cpp
         src/FileIO/ThemeModule.cpp
         src/ThemeElement/ThemeButton.cpp
+        src/ThemeElement/ThemeFont.cpp
         src/ThemeElement/ThemeLabel.cpp
         src/ThemeElement/ThemeListWidget.cpp
         src/ThemeElement/ThemeTextBrowser.cpp

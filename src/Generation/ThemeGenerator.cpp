@@ -4,6 +4,7 @@
 #include <Generation/ThemeDefaults.h>
 
 #include <ThemeElement/ThemeButton.h>
+#include <ThemeElement/ThemeFont.h>
 #include <ThemeElement/ThemeLabel.h>
 #include <ThemeElement/ThemeListWidget.h>
 #include <ThemeElement/ThemeTextBrowser.h>
@@ -59,11 +60,7 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ui_version->setText(ThemeDefaults::VERSION_TEXT);
 
     // TEMPORARY
-    QFont serverListFont;
-    serverListFont.setFamily("Source Sans Pro");
-    serverListFont.setPointSize(14);
-    serverListFont.setBold(true);
-    serverListFont.setStyleStrategy(QFont::PreferDefault);
+    ThemeElement::ThemeFont serverListFont("Source Sans Pro", 14, true, false, "#FFFFFF");
 
     ThemeElement::ThemeListWidget* ui_server_list = new ThemeElement::ThemeListWidget(lobbyRoot, module.getGeometryOfMember("server_list"), serverListFont);
 
@@ -98,23 +95,7 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ui_player_count->setText(ThemeDefaults::PLAYER_COUNT_TEXT);
     ui_player_count->setAlignment(Qt::AlignHCenter);
 
-    QFont l_font;
-    // Font priority
-    // 1. "font_" + p_identifier
-    // 2. "font_default"
-    // 3. System font
-    QString font_name = "Source Sans Pro";
-    int f_weight = 10;
-    bool is_bold = true;
-    bool is_antialias = false;
-    QColor l_font_color {"#FFFFFF"};
-
-    l_font.setFamily(font_name);
-    l_font.setPointSize(f_weight);
-    l_font.setBold(is_bold);
-
-    if(is_antialias) l_font.setStyleStrategy(QFont::NoAntialias);
-    else{l_font.setStyleStrategy(QFont::PreferDefault);}
+    ThemeElement::ThemeFont l_font{"Source Sans Pro", 10, true, false, "#FFFFFF"};
 
     ThemeElement::ThemeTextBrowser* ui_description = new ThemeElement::ThemeTextBrowser(lobbyRoot, module.getGeometryOfMember("description"), l_font);
     // TEMPORARY
@@ -122,7 +103,7 @@ QWidget* ThemeGenerator::createLobbyWidgetTree(const FileIO::ThemeModule& module
     ui_description->setReadOnly(true);
 
     QString style_sheet_string = QString("QTextBrowser { background-color: rgba(0, 0, 0, 0);\n") +
-                                 "color: " + l_font_color.name(QColor::HexArgb) + ";\n" + (is_bold ? "font: bold;" : "") +
+                                 "color: " + l_font.getFontColor().name(QColor::HexArgb) + ";\n" + (true ? "font: bold;" : "") +
                                  "}";
     ui_description->setStyleSheet(style_sheet_string);
 
